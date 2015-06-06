@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Class Twitter</title>
+    <link rel="stylesheet" href="public/components/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body ng-app='tweet'>
+    <h1>Tweet Feed</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Rad Tweets</div>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/#/tweetFeed">Feed Page</a>
+                    </li>
+                    <li>
+                        <a href="/#/user">User Posts Page</a>
+                    </li>
+                    <li>
+                        <a href="/#/profile">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ng-view></ng-view>
+
+
+    <script src='public/components/angular.min.js'></script>
+    <script src='public/components/angular-route.js'></script>
+    <script src='app.js'></script>
+    <script src='service.js'></script>
+
+    <script src="public/views/tweetFeed/tweetFeed.js"></script>
+    <script src="public/views/user/user.js"></script>
+    <script src="public/views/profile/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+<h1>Feed</h1>
+<div ng-repeat="tweet in allTweets">
+    <a ng-href="/#/user/{{tweet.username}}">{{tweet.username}}</a> said: {{tweet.text}}
+</div>

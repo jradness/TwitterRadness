@@ -1,0 +1,6 @@
+<h1>{{username}}</h1>
+
+<div ng-repeat="tweet in userTweets">
+    <div class="bg-info">{{tweet.username}} said at [{{tweet.time}}]:</div>
+    <div class="bg-primary">{{tweet.text}}</div>
+</div>
